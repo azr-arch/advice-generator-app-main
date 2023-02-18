@@ -1,6 +1,6 @@
 
-const adviceEl = document.querySelector('.advice-text');
 const dice = document.querySelector('.card--dice');
+const adviceEl = document.querySelector('.advice-text');
 const adviceId = document.querySelector('.advice-id-text');
 
 
@@ -15,11 +15,6 @@ function showAdvice(data){
     adviceEl.innerText = `'${data.advice}'`
     adviceId.innerText = data.id
 }   
-
-function rotate(){
-    diceSvg.style = `transform: rotateZ(360deg)`
-
-}
 
 dice.addEventListener('click', () => {
     getAdvice()
